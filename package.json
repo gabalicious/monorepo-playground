@@ -1,0 +1,36 @@
+{
+  "name": "monorepo-playground",
+  "version": "1.0.0",
+  "description": "A monorepo project to test all kinds of setups with lerna and showcase skills",
+  "main": "index.js",
+  "scripts": {
+    "setup": "lerna exec  --stream -- yarn install",
+    "clean": "lerna clean && yarn cache clean && yarn autoclean",
+    "deepclean": "rm -rf node_modules && lerna exec -- rm -rf node_modules",
+    "tree": "tree -d -I \\node_modules\\* -L 3",
+    "build": "lerna run build --stream",
+    "dev": "lerna run --scope *backend* --scope *webpack5* dev --stream",
+    "dev:yamldb": "lerna run start:dev --scope *yamldb* --stream",
+    "dev:mfe": "lerna run start:dev --scope *mfe* --stream"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "./projects/express-multiple-frontends/*",
+      "./projects/express-pdf-docx/*",
+      "./projects/express-rabbitmq/*",
+      "./projects/express-vite-ssr/*",
+      "./projects/express-yaml-ts/*",
+      "./projects/express-puppeteer/*"
+    ],
+    "nohoist": [
+      "**/project-folder",
+      "**/project-folder/**"
+    ]
+  }
+}

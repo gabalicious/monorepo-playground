@@ -1,0 +1,13 @@
+{
+  "packages": [
+    "projects/express-multiple-frontends/*",
+    "projects/express-pdf-docx/*",
+    "projects/express-rabbitmq/*",
+    "projects/express-vite-ssr/*",
+    "projects/express-yaml-ts/*",
+    "projects/express-puppeteer/*"
+  ],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "0.0.0"
+}
