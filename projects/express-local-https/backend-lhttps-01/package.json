@@ -1,0 +1,21 @@
+{
+  "name": "backend-lhttps-01",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon bin/www.mjs --experimental-modules",
+    "cert": "mkcert py.local gaba.dev 0.0.0.0 127.0.0.1 localhost",
+    "loadhost": "sudo hostile load hosts.txt",
+    "unloadhost": "sudo hostile unload hosts.txt"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.3.2",
+    "express": "^4.17.1",
+    "hostile": "^1.3.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12",
+    "pug": "^3.0.2"
+  }
+}

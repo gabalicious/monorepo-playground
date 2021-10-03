@@ -5,7 +5,8 @@
     "projects/express-rabbitmq/*",
     "projects/express-vite-ssr/*",
     "projects/express-yaml-ts/*",
-    "projects/express-puppeteer/*"
+    "projects/express-local-https/*",
+    "projects/express-puppeteer-ssr/*"
   ],
   "npmClient": "yarn",
   "useWorkspaces": true,

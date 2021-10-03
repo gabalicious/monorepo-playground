@@ -2,7 +2,7 @@
   "name": "monorepo-playground",
   "version": "1.0.0",
   "description": "A monorepo project to test all kinds of setups with lerna and showcase skills",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "setup": "lerna exec  --stream -- yarn install",
     "clean": "lerna clean && yarn cache clean && yarn autoclean",
@@ -26,7 +26,7 @@
       "./projects/express-rabbitmq/*",
       "./projects/express-vite-ssr/*",
       "./projects/express-yaml-ts/*",
-      "./projects/express-puppeteer/*"
+      "./projects/express-puppeteer-ssr/*"
     ],
     "nohoist": [
       "**/project-folder",
